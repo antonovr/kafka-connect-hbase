@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('git checkout') {
       steps {
-        git(url: 'antonovr/kafka-connect-hbase', branch: 'master', poll: true)
+        git(url: 'https://github.com/antonovr/kafka-connect-hbase.git', branch: 'test-jenkins-blue-ocean', poll: true)
       }
     }
   }
